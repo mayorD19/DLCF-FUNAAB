@@ -1,27 +1,152 @@
 body{
-    width: 100%
+    width: 100%;
+    /* overflow-x: hidden; */
+    padding: 0;
+    margin: 0;
 }
 
 #nav-bar{
     display: flex;
     width: 1200px;
     height: 75px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo{
-    margin-top: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .nav-items{
     display: flex;
     align-items: end;
-    margin-right: 50px;
+    margin-right: -100px;
     list-style-type: none;
     gap: 45px;
 }
+
 a{
     text-decoration: none;
     text-align: right;
     font-size: 20px;
+}
+
+.sign-in{
+    border-radius: 31px;
+    padding: 8px 27px;
+    margin-bottom: -7px;
+    border: solid 3px #D5722D;;
+    background-color: #ffff;
+}
+
+.sign-in a{
+    color: #D5722D;
+}
+
+.section-1{
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.text1{
+    position: absolute;
+    bottom: 178px;
+    left: 75px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.text2{
+    position: absolute;
+    bottom: 80px;
+    left: 75px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    color: white;
+}
+
+.text3{
+    color: white;
+    position: absolute;
+    bottom: 63px;
+    font-size: 23px;
+    left: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.arrow{
+    position: absolute;
+    bottom: 85px;
+    right: 50px;
+}
+.logo-center{
+    text-align: center;
+    font-size: small;
+    margin-top: 35px;
+}
+.section-2{
+    /* text-align: center; */
+    margin-top: 10px;
+    border-bottom-right-radius: 10px;
+}
+.items a{
+    font-size: 25px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    font-weight: 900;
+    color: #D5722D;
+}
+.info{
+    margin-left: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.info h4{
+    font-size: 32px;
+    margin-bottom: -15px;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1.0s ease; /* Animation speed and ease function */
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  hr{
+    border: 3px solid gray;
+    border-radius: 9px; 
+    width: 96%;
+    margin-top: 54px;
+  }
+  .section-3{
+    margin-left: 39px;
+  }
+  .section-3 h3{
+    color: #D5722D;
+    font-size: 36px;
+    font-weight: 600;
+  }
+.box-1{
+    width: 370px;
+    height: 555px;
+    border: 2px solid #D5722D;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.bible-img{
+    padding-left: -10px;
 }

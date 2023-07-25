@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  position: relative; /* Required for absolute positioning */
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0); /* Initial transformation: hidden */
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::before {
+  transform: scaleX(1); /* Transformation on hover: show */
+  transform-origin: bottom right;
+}
