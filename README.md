@@ -1,2 +1,2 @@
-# DLCF-FUNAAB
-The church website
+# DLCF-OGUN-CENTRAL
+The church website page
