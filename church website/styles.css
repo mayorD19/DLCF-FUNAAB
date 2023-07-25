@@ -1,180 +1,234 @@
-body{
-    width: 100%;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-#nav-bar{
-    display: flex;
-    width: 1200px;
-    height: 75px;
-    justify-content: space-between;
-}
-
-.logo{
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.section-1{
-    margin-top: 2.5rem;
-    position: relative;
-    height: 838px;
-}
-
-.nav-items{
-    display: flex;
-    align-items: end;
-    margin-right: -100px;
-    list-style-type: none;
-    gap: 45px;
-}
-
-a{
-    text-decoration: none;
-    text-align: right;
-    font-size: 20px;
-}
-
-.sign-in{
-    border-radius: 31px;
-    padding: 8px 27px;
-    margin-bottom: -7px;
-    border: solid 3px #D5722D;;
-    background-color: #ffff;
-}
-
-.sign-in a{
-    color:#D5722D
-}
-
-.sign-in:hover{
-    background-color: #D5722D;
-}
-.sign-in:hover a{
-    color: #fff;
-}
-/* section-2 */
-/* welcome-text */
-.arrow{
-    display: flex;
-    align-items: center;
-    padding-top: 160px;
-}
-.welcome-arrow{
-    display: flex;
-    justify-content: space-between;
-    transform: translate(12px, -430px);
-    color: #fff;
-    margin-left: 25px;
-    font-family: 'Montserrat', sans-serif;
-}
-.logo-center{
-    text-align: center;
-    font-size: small;
-    margin-top: 57px;
-}
-.section-2{
-    /* text-align: center; */
-    margin-top: 10px;
-    border-bottom-right-radius: 10px;
-}
-.items a{
-    font-size: 25px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
-a:hover{
-    font-weight: 300;
-    color: #D5722D;
-}
-.info{
-    margin-left: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}
-.info h4{
-    font-size: 32px;
-    margin-bottom: -15px;
-}
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 1.0s ease; /* Animation speed and ease function */
-  }
-  
-  .slider img {
-    width: 100%;
-    height: auto;
-  }
-
-  hr{
-    border: 3px solid gray;
-    border-radius: 9px; 
-    width: 96%;
-    margin-top: 54px;
-  }
-/* section-3 */
-  .section-3{
-    margin-left: 39px;
-  }
-  .section-3 h3{
-    color: #D5722D;
-    font-size: 36px;
-    font-weight: 600;
-    margin-left: 50px;
-  }
-.box-1{
-    width: 296px;
-    height: max-content;
-    border: 2px solid #D5722D;
-    border-radius: 45px;
-    padding: 10px 15px;
-}
-.parent-div{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 58px;
-    margin-left: 70px;
-}
-.box-2{
-    width: 296px;
-    /* height: max-content; */
-    border: 2px solid #D5722D;
-    border-radius: 45px;
-    padding: 10px 15px;
-}
-.box-3{
-    width: 296px;
-    height: max-content;
-    border: 2px solid #D5722D;
-    border-radius: 45px;
-    padding: 10px 15px;
-}
-.bible-img img{
-    width: 352px;
-    margin-left: -25px;
-    height: 200px;
-    margin-top: -30px;
-}
-.fire-img img{
-    width: 287px;
-    margin-left: 5px;
-    margin-top: 17%;
-}
-.cool-waters-img img{
-    width: 247px;
-    margin-left: 24px;
-    height: 155px;
-    margin-top: 38px;
-}
-.common{
-    width: 280px;
-    height: 190px;
-}
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #nav-bar {
+            display: flex;
+            width: 1200px;
+            height: 75px;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .section-1 {
+            margin-top: 2.5rem;
+            position: relative;
+            height: 838px;
+        }
+        
+        .nav-items {
+            display: flex;
+            align-items: end;
+            margin-right: -100px;
+            list-style-type: none;
+            gap: 45px;
+        }
+        
+        .items a {
+            text-decoration: none;
+            text-align: right;
+            font-size: 20px;
+        }
+        
+        .sign-in {
+            border-radius: 31px;
+            padding: 8px 27px;
+            margin-bottom: -7px;
+            border: solid 3px #D5722D;
+            ;
+            background-color: #ffff;
+        }
+        
+        .sign-in a {
+            color: #D5722D;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .sign-in:hover {
+            background-color: #D5722D;
+        }
+        
+        .sign-in:hover a {
+            color: #fff;
+        }
+        /* section-2 */
+        /* welcome-text */
+        
+        .arrow {
+            display: flex;
+            align-items: center;
+            padding-top: 160px;
+            margin-right: 25px;
+        }
+        
+        .welcome-arrow {
+            display: flex;
+            justify-content: space-between;
+            transform: translate(12px, -430px);
+            color: #fff;
+            margin-left: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo-center {
+            text-align: center;
+            font-size: small;
+            margin-top: 57px;
+        }
+        
+        .section-2 {
+            /* text-align: center; */
+            margin-top: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .items a {
+            font-size: 25px;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .items a:hover {
+            font-weight: 300;
+            color: #D5722D;
+        }
+        
+        .info {
+            margin-left: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+        
+        .info h4 {
+            font-size: 32px;
+            margin-bottom: -15px;
+        }
+        
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .slider {
+            display: flex;
+            transition: transform 1.0s ease;
+            /* Animation speed and ease function */
+        }
+        
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+        
+        hr {
+            border: 3px solid gray;
+            border-radius: 9px;
+            width: 96%;
+            margin-top: 54px;
+        }
+        /* section-3 */
+        
+        .section-3 {
+            margin-left: 39px;
+        }
+        
+        .section-3 h3 {
+            color: #D5722D;
+            font-size: 36px;
+            font-weight: 600;
+            margin-left: 50px;
+        }
+        
+        .box-1 {
+            width: 296px;
+            height: max-content;
+            border: 2px solid #D5722D;
+            border-radius: 45px;
+            padding: 10px 15px;
+        }
+        
+        .parent-div {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 58px;
+            margin-left: 70px;
+        }
+        
+        .box-2 {
+            width: 296px;
+            /* height: max-content; */
+            border: 2px solid #D5722D;
+            border-radius: 45px;
+            padding: 10px 15px;
+        }
+        
+        .box-3 {
+            width: 296px;
+            height: max-content;
+            border: 2px solid #D5722D;
+            border-radius: 45px;
+            padding: 10px 15px;
+        }
+        
+        .bible-img img {
+            width: 352px;
+            margin-left: -25px;
+            height: 200px;
+            margin-top: -30px;
+        }
+        
+        .fire-img img {
+            width: 287px;
+            margin-left: 5px;
+            margin-top: 17%;
+        }
+        
+        .cool-waters-img img {
+            width: 247px;
+            margin-left: 24px;
+            height: 155px;
+            margin-top: 38px;
+        }
+        
+        .common {
+            width: 280px;
+            height: 190px;
+        }
+        /* footer */
+        
+        .parent-footer {
+            background-color: rgb(42, 40, 39);
+            display: flex;
+            padding-top: 11px;
+            padding-bottom: 27px;
+            justify-content: center;
+            width: 100%;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .contents1 a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .contents1 {
+            display: grid;
+            gap: 33px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .ft-title {
+            font-size: large;
+            color: lightblue;
+        }
