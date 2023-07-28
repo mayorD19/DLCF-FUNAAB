@@ -15,31 +15,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,900&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- section 1 -->
-    <main class="main-section">
+    <main class="main-section" id="main-section">
         <nav id="nav-bar">
             <div class="logo">
-                <a href="#"><img src="Logo.png" alt="logo_picture"></a>
+                <a href="#main-section"><img src="Logo.png" alt="logo_picture"></a>
             </div>
             <ul class="nav-items">
                 <li class="items">
-                    <a href="#">Home</a>
+                    <a href="#main-section">Home</a>
                 </li>
                 <li class="items">
-                    <a href="#">About Us</a>
+                    <a href="#section-2">About Us</a>
                 </li>
                 <li class="items">
                     <a href="#">Report</a>
                 </li>
                 <li class="items">
-                    <a href="#">Publications</a>
+                    <a href="#section-3">Publications</a>
                 </li>
-                <li class="items">
-                    <a href="#">Locations</a>
-                    <span><img src="feDropDown1.png" alt="#"></span>
+                <li style="position: relative;" class="items js-items">
+                    <a href="#">Locations &#9662;</a>
+                    <!-- <span style="cursor: pointer;"><img src="feDropDown1.png" alt="#"></span> -->
+                    <div class="display-none">
+                        <div class="dropdown">
+                            <a class="dropdown-menu js-funaab" href="#">FUNAAB</a>
+                            <div class="funaab-container">
+                                <div class="funaab-elem">
+                                    <a class="funaab-menu" href="www.google.com">CAMP <span style="opacity: 0;">....</span></a>
+                                    <a class="funaab-menu" href="#">BETHEL<span style="opacity: 0;">.</span></a>
+                                    <a class="funaab-menu" href="#">PENIEL <span style="opacity: 0;">..</span></a>
+                                    <a class="funaab-menu" href="#">EXCEL <span style="opacity: 0;">....</span></a>
+                                    <a class="funaab-menu" href="#">ACCORD</a>
+                                    <a class="funaab-menu" href="#">APAKILA</a>
+                                    <a class="funaab-menu" href="#">SUB <span style="opacity: 0;">.........</span></a>
+                                </div>
+                            </div>
+
+                            <a class="dropdown-menu" href="#">MAPOLY</a>
+                            <a class="dropdown-menu" href="#">LEME <span style="opacity: 0;">......</span></a>
+                        </div>
+
+                    </div>
+
                 </li>
 
                 <button class="sign-in">
@@ -66,7 +88,7 @@
             </div>
         </div>
         <!--section 2  -->
-        <div class="section-2">
+        <div class="section-2" id="section-2">
             <div class="logo-center"><img src="Logo.png" alt="centered-logo"></div>
             <div class="info">
                 <h4>Welcome to DLCF Ogun Central</h4>
@@ -74,25 +96,26 @@
                     Welcome to the official website of Deeper Life Campus Fellowship Ogun Central! We are thrilled to showcase the <br>meaningful work and impact we bring to our campus community.
                 </p>
                 <h4>Nuturing Spiritual Growth Together</h4>
-                <p class="second-info">
-                    At Deeper Life Campus Fellowship Ogun Central, our primary focus is to foster spiritual growth and development within our community. We achieve this by providing a nurturing environment that encourages and supports the journey towards a deeper understanding
-                    of God's word and a stronger relationship with Him. Our diverse range of activities includes prayer meetings,engaging bible studies, impactful mentorship programs, and other enriching endeavors.
+                <p class="second-info" style="line-height: 1.4;
+                letter-spacing: 0.1px; padding-inline-end: 7%;"> At Deeper Life Campus Fellowship Ogun Central, our primary focus is to foster spiritual growth and development within our community. We achieve this by providing a nurturing environment that encourages and supports the journey towards
+                    a deeper understanding of God 's word and a stronger relationship with Him. Our diverse range of activities includes prayer meetings,engaging bible studies, impactful mentorship programs, and other enriching endeavors.
                 </p>
                 <h4>Join Our Locations</h4>
-                <p class="third-class">
+                <p class="third-class" style="line-height: 1.4;
+                letter-spacing: 0.1px;">
                     With our local chapters conveniently located across the state, you can easily connect with like-minded individuals and fellow members. Engage in various events and activities organized by your local chapter, fostering a sense of unity and shared purpose.
                 </p>
                 <h4>Abundant Resources & Support</h4>
-                <p class="fourth-class">
+                <p class="fourth-class" style="line-height: 1.4;
+                letter-spacing: 0.1px; padding-inline-end: 52px;">
                     As part of our commitment to our members' growth, we offer a wealth of resources and support. Count on us for spiritual guidance and leadership development programs that empower you to become a stronger and more knowledgeable leader. Our mentorship opportunities
                     allow for personal growth and mentorship in faith-centered studies. Furthermore, we extend our support by providing scholarships to those aspiring to pursue higher education in faith-focused studies. Join us in this rewarding journey
-                    of spiritual growth and connection, and let us grow together in faith and purpose.
-                </p>
+                    of spiritual growth and connection, and let us grow together in faith and purpose. </p>
             </div>
         </div>
         <hr>
         <!-- section 3 -->
-        <div class="section-3">
+        <div class="section-3" id="section-3">
             <h3>PUBLICATIONS</h3>
             <div class="parent-div">
                 <div class="box-1">
@@ -135,7 +158,6 @@
                     <a href="#" target="_blank"><i class="fa-solid fa-phone" style="color: #1f10ea;"></i></i>Publications</a>
                     <a href="#" target="_blank">Report</a>
                     <a href="#" target="_blank">Locations</a>
-
 
                 </div>
             </div>
