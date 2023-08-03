@@ -82,3 +82,12 @@ document.addEventListener('click', function(event) {
         $(getFunaab).removeClass("display-block");
     }
 });
+
+//hamburger
+const hamburger = document.querySelector(".hamburger")
+const navItems = document.querySelector(".nav-items")
+    // creating the function that activates on click
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navItems.classList.toggle("active");
+})
