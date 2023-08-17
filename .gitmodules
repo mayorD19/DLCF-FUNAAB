@@ -1,0 +1,6 @@
+[submodule "Dlcf-locations"]
+	path = Dlcf-locations
+	url = https://github.com/DonFreedom/Dlcf-locations.git
+[submodule "Sign-in---Sign-up-Page-DLCF-Ogun-State-Central"]
+	path = Sign-in---Sign-up-Page-DLCF-Ogun-State-Central
+	url = https://github.com/Finney06/Sign-in---Sign-up-Page-DLCF-Ogun-State-Central.git

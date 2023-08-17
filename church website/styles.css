@@ -1,6 +1,7 @@
 body {
     max-width: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -81,8 +82,8 @@ body {
 .dropdown {
     display: grid;
     position: absolute;
-    top: 30px;
-    left: 77px;
+    top: 26px;
+    left: 31px;
     font-size: 13px;
     background-color: lightgray;
     border: 1px solid lightgray;
@@ -247,12 +248,55 @@ hr {
     /* margin-left: 50px; */
 }
 
+
+/* media-query  for the smallest mobile*/
+
+@media(min-width: 320px) {
+    .box-1 {
+        width: 274px;
+        margin-left: 2px;
+    }
+    .box-2 {
+        width: 274px;
+        margin-left: 3px;
+    }
+    .box-3 {
+        width: 274px;
+        margin-left: 2px;
+    }
+    .fire-img img {
+        width: 230px;
+        margin-top: 13%;
+        padding-left: 10px;
+    }
+    .cool-waters-img img {
+        width: 220px;
+        margin-left: 22px;
+        height: 125px;
+        margin-top: 38px;
+    }
+    .bible-img img {
+        width: 310px;
+    }
+    .dropdown {
+        top: 90%;
+        left: 24%;
+    }
+    .section-1 {
+        margin-bottom: 0px;
+    }
+}
+
 .box-1 {
     width: 296px;
     height: max-content;
     border: 3px solid #D5722D;
     border-radius: 45px;
     padding: 10px 15px;
+    height: 480px;
+    display: flex;
+    padding: 17px;
+    flex-direction: column;
 }
 
 .parent-div {
@@ -269,6 +313,10 @@ hr {
     border: 3px solid #D5722D;
     border-radius: 45px;
     padding: 10px 15px;
+    height: 480px;
+    display: flex;
+    padding: 17px;
+    flex-direction: column;
 }
 
 .box-3 {
@@ -277,6 +325,19 @@ hr {
     border: 3px solid #D5722D;
     border-radius: 45px;
     padding: 10px 15px;
+    height: 480px;
+    display: flex;
+    padding: 17px;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.box-text {
+    font-size: 17px;
+}
+
+.more {
+    text-decoration: none;
 }
 
 .bible-img img {
@@ -287,9 +348,9 @@ hr {
 }
 
 .fire-img img {
-    width: 287px;
-    margin-left: 5px;
-    margin-top: 17%;
+    width: 227px;
+    margin-left: 15px;
+    margin-top: 9%;
 }
 
 .cool-waters-img img {
@@ -316,6 +377,7 @@ hr {
     width: 100%;
     gap: 40px;
     margin-top: 10%;
+    color: #fff;
 }
 
 .middle-man-footer {
@@ -328,6 +390,10 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 
+.contents1 a:hover {
+    border-bottom: 5px solid black;
+}
+
 .contents1 {
     display: grid;
     gap: 33px;
@@ -337,6 +403,10 @@ hr {
 .ft-title {
     font-size: xx-large;
     color: lightblue;
+}
+
+.copyright {
+    display: none;
 }
 
 
@@ -374,25 +444,44 @@ hr {
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav-items {
+        z-index: 2;
         position: absolute;
-        top: -500px;
+        top: 90px;
+        left: -120%;
+        max-height: 70%;
         gap: 0;
         flex-direction: column;
         background-color: #DFDFDF;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.5s ease-in-out;
+    }
+    .funaab-menu a {
+        font-size: 10px;
     }
     .items {
         margin: 16px 0;
+    }
+    .dropdown {
+        display: grid;
+        position: absolute;
+        top: -238px;
+        left: 114%;
+        font-size: 13px;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        padding: 7px 10px;
+        z-index: 2;
     }
     .arrow {
         display: none;
     }
     .nav-items.active {
-        top: -15px;
+        top: 83px;
+        left: -40px;
         z-index: 22;
-        width: 86%;
+        max-height: 70%;
+        width: 100%;
         right: 70px;
         padding-bottom: 9%;
         align-items: center;
@@ -472,6 +561,9 @@ hr {
         gap: 20px !important;
         width: min-content;
     }
+    .copyright {
+        display: none;
+    }
     /* .sermon {
         position: relative;
         left: -30px;
@@ -524,36 +616,12 @@ hr {
     .parent-footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-left: 16px;
-        place-items: center;
+        padding: 10px;
     }
     .contents1 {
         width: 0 !important;
     }
+    .copyright {
+        display: block;
+    }
 }
-
-
-/* @media(min-width: 320px) {
-    .box-1 {
-        width: 263px;
-    }
-    .box-2 {
-        width: 263px;
-    }
-    .box-3 {
-        width: 263px;
-    }
-    .fire-img img {
-        width: 262px;
-        margin-top: 17%;
-    }
-    .cool-waters-img img {
-        width: 220px;
-        margin-left: 22px;
-        height: 125px;
-        margin-top: 38px;
-    }
-    .bible-img img {
-        width: 310px;
-    }
-} */
