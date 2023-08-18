@@ -4,9 +4,3 @@
 [submodule "Sign-in---Sign-up-Page-DLCF-Ogun-State-Central"]
 	path = Sign-in---Sign-up-Page-DLCF-Ogun-State-Central
 	url = https://github.com/Finney06/Sign-in---Sign-up-Page-DLCF-Ogun-State-Central.git
-[submodule "Locations"]
-    path = Locations
-    url = https://github.com/DonFreedom/Locations.git
-[submodule "sign-up"]
-    path = sign-up
-    url = https://github.com/Finney06/sign-up.git
